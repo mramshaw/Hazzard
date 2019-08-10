@@ -1,0 +1,6 @@
+# Ignore the following files
+node_modules/**
+.git/**
+CURLs.txt
+README.md
+.gitignore

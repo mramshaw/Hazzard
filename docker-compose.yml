@@ -1,0 +1,21 @@
+version: '2'
+
+networks:
+  jukeboxes:
+
+services:
+
+    node_js:
+        build: .
+        image: mramshaw4docs/jukeboxes:10.16.2-stretch
+        networks:
+          jukeboxes:
+        ports:
+            - "5000:5000"
+        working_dir: /app
+        # command: ["npm", "run", "-s", "eslint", "."]
+        # command: ["npm", "test"]
+        command: ["npm", "start"]
+        environment:
+            HOST: "localhost"
+            PORT: "5000"

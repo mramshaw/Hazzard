@@ -1,0 +1,12 @@
+services:
+  - docker
+
+script:
+  - docker-compose run node_js npm test
+  - docker-compose down
+
+notifications:
+  email: false
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

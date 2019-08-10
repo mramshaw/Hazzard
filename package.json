@@ -1,0 +1,37 @@
+{
+  "name": "Hazzard",
+  "version": "1.0.0",
+  "description": "A RESTful API with node.js",
+  "main": "hazzard.js",
+  "scripts": {
+    "eslint": "eslint",
+    "start": "node app",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mramshaw/Hazzard.git"
+  },
+  "keywords": [
+    "rest",
+    "rest-api",
+    "restful"
+  ],
+  "author": "Martin Ramshaw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mramshaw/Hazzard/issues"
+  },
+  "homepage": "https://github.com/mramshaw/Hazzard#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.1.0",
+    "mocha": "^6.2.0"
+  }
+}
