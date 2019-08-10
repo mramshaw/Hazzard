@@ -1,6 +1,7 @@
 # Hazzard
 
-[![Build status](http://travis-ci.org/mramshaw/Hazzard.svg?branch=master)](http://travis-ci.org/mramshaw/Hazzard) [![Coverage Status](http://codecov.io/github/mramshaw/Hazzard/coverage.svg?branch=master)](http://codecov.io/github/mramshaw/Hazzard?branch=master)
+[![Build status](http://travis-ci.org/mramshaw/Hazzard.svg?branch=master)](http://travis-ci.org/mramshaw/Hazzard)
+[![GitHub release](http://img.shields.io/github/release/mramshaw/Hazzard.svg?style=flat-square)](http://github.com/mramshaw/Hazzard/releases)
 
 [![Known Vulnerabilities](https://snyk.io//test/github/mramshaw/Hazzard/badge.svg?style=plastic&targetFile=package.json)](https://snyk.io//test/github/mramshaw/Hazzard?style=plastic&targetFile=package.json)
 
@@ -54,3 +55,4 @@ As usual, Ctrl-C to stop.
 
 - [x] Add various badges
 - [x] Dockerize everything
+- [ ] Add code coverage
