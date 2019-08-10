@@ -1,5 +1,9 @@
 # Hazzard
 
+[![Build status](http://travis-ci.org/mramshaw/Hazzard.svg?branch=master)](http://travis-ci.org/mramshaw/Hazzard) [![Coverage Status](http://codecov.io/github/mramshaw/Hazzard/coverage.svg?branch=master)](http://codecov.io/github/mramshaw/Hazzard?branch=master)
+
+[![Known Vulnerabilities](https://snyk.io//test/github/mramshaw/Hazzard/badge.svg?style=plastic&targetFile=package.json)](https://snyk.io//test/github/mramshaw/Hazzard?style=plastic&targetFile=package.json)
+
 A simple RESTful endpoint with __node.js__ using [express](http://www.npmjs.com/package/express) and [superagent](http://www.npmjs.com/package/superagent).
 
 Logging will be carried out with [morgan](http://www.npmjs.com/package/morgan).
@@ -48,4 +52,5 @@ As usual, Ctrl-C to stop.
 
 ## To Do
 
-- [ ] Dockerize everything
+- [x] Add various badges
+- [x] Dockerize everything
