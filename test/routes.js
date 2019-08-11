@@ -12,7 +12,6 @@ const should = chai.should();
 
 chai.use(chaiHttp);
 
-//Our parent block
 describe('GET jukeboxes', () => {
     describe('Sanity-check request parameters', () => {
         it('it should reject an invalid offset', (done) => {
@@ -32,6 +31,16 @@ describe('GET jukeboxes', () => {
                     res.should.have.status(200);
                     res.body.status.should.eql('error');
                     res.body.message.should.eql('limit not numeric');
+                done();
+              });
+        });
+        it('it should reject a limit < 1', (done) => {
+          chai.request(app)
+              .get('/v1/jukeboxes/1?limit=0')
+              .end((err, res) => {
+                    res.should.have.status(200);
+                    res.body.status.should.eql('error');
+                    res.body.message.should.eql('limit must be 1 or greater');
                 done();
               });
         });

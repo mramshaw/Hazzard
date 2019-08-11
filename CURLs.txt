@@ -1,0 +1,11 @@
+GET:
+
+	curl -v localhost:5000/v1/jukeboxes/aae445bf-72f0-4680-a23e-18fcf7241f8b
+
+Limited GET with model:
+
+	curl -v -F model=angelina -F offset=2 -F limit=5 localhost:5000/v1/jukeboxes/aae445bf-72f0-4680-a23e-18fcf7241f8b
+
+Limited GET:
+
+	curl -v -F offset=2 -F limit=5 localhost:5000/v1/jukeboxes/aae445bf-72f0-4680-a23e-18fcf7241f8b

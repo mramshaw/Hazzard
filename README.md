@@ -7,6 +7,8 @@
 
 A simple RESTful endpoint with __node.js__ using [express](http://www.npmjs.com/package/express) and [superagent](http://www.npmjs.com/package/superagent).
 
+Testing will be carried out with [Mocha](http://mochajs.org/), [Chai](http://chaijs.com) and [Chai-HTTP](http://www.chaijs.com/plugins/chai-http/).
+
 Logging will be carried out with [morgan](http://www.npmjs.com/package/morgan).
 
 ## Configuration defaults
@@ -41,6 +43,8 @@ Test the app as follows:
 npm test
 ```
 
+Or start the app (<kbd>npm start</kbd>) and test with [curl](CURLs.txt).
+
 ## Running
 
 Start the app as follows:
@@ -49,10 +53,29 @@ Start the app as follows:
 npm start
 ```
 
+This should make our endpoint available at:
+
+    http://localhost:5000/v1/jukeboxes/
+
 As usual, Ctrl-C to stop.
+
+## Docker
+
+We will use the LTS version (10.16.2-stretch) of node for our Docker build and tests.
+
+Running <kbd>docker-compose up</kbd> will trigger a docker build and start the app.
+
+[Ctrl-C and <kbd>docker-compose down</kbd> to stop.]
+
+After the build has been done, run the docker image as follows:
+
+```bash
+docker run --rm -it mramshaw4docs/jukeboxes:10.16.2-stretch
+```
 
 ## To Do
 
 - [x] Add various badges
 - [x] Dockerize everything
 - [ ] Add code coverage
+- [ ] Create an integration with `swagger-ui` (for exploring the API)
