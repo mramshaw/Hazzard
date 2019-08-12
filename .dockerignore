@@ -2,5 +2,6 @@
 node_modules/**
 .git/**
 CURLs.txt
+docker-compose.yml
 README.md
 .gitignore
