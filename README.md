@@ -43,6 +43,10 @@ Test the app as follows:
 npm test
 ```
 
+This should look as follows:
+
+![tests](images/tests.png)
+
 Or start the app (<kbd>npm start</kbd>) and test with [curl](CURLs.txt).
 
 ## Running
@@ -59,6 +63,10 @@ This should make our endpoint available at:
 
 As usual, Ctrl-C to stop.
 
+In a browser, this should look as follows:
+
+![browser](images/browser.png)
+
 ## Docker
 
 We will use the LTS version (10.16.2-stretch) of node for our Docker build and tests.
@@ -67,11 +75,19 @@ Running <kbd>docker-compose up</kbd> will trigger a docker build and start the a
 
 [Ctrl-C and <kbd>docker-compose down</kbd> to stop.]
 
+This should look as follows:
+
+![docker-compose_up](images/docker-compose_up.png)
+
 After the build has been done, run the docker image as follows:
 
 ```bash
-docker run --rm -it mramshaw4docs/jukeboxes:10.16.2-stretch
+docker run --rm -it -e HOST=0.0.0.0 -p 5000:5000 mramshaw4docs/jukeboxes:10.16.2-stretch
 ```
+
+This should look as follows:
+
+![docker](images/docker.png)
 
 ## To Do
 
