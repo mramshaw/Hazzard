@@ -7,7 +7,7 @@ services:
 
     node_js:
         build: .
-        image: mramshaw4docs/jukeboxes:10.16.2-stretch
+        image: mramshaw4docs/jukeboxes:12.16.2-stretch
         networks:
           jukeboxes:
         ports:

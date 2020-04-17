@@ -93,5 +93,6 @@ This should look as follows:
 
 - [x] Add various badges
 - [x] Dockerize everything
+- [x] Upgrade to latest LTS version of `node` (12.16.2-stretch)
 - [ ] Add code coverage
 - [ ] Create an integration with `swagger-ui` (for exploring the API)

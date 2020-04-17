@@ -1,6 +1,6 @@
 {
   "name": "Hazzard",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A RESTful API with node.js",
   "main": "hazzard.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "restful"
   ],
   "author": "Martin Ramshaw",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "bugs": {
     "url": "https://github.com/mramshaw/Hazzard/issues"
   },
