@@ -63,7 +63,7 @@ This should make our endpoint available at:
 
 As usual, Ctrl-C to stop.
 
-In a browser, this should look as follows:
+In a browser, this should look something like the following:
 
 ![browser](images/browser.png)
 
@@ -82,7 +82,7 @@ This should look as follows:
 After the build has been done, run the docker image as follows:
 
 ```bash
-docker run --rm -it -e HOST=0.0.0.0 -p 5000:5000 mramshaw4docs/jukeboxes:10.16.2-stretch
+docker run --rm -it -e HOST=0.0.0.0 -p 5000:5000 mramshaw4docs/jukeboxes:12.16.2-stretch
 ```
 
 This should look as follows:
@@ -94,5 +94,6 @@ This should look as follows:
 - [x] Add various badges
 - [x] Dockerize everything
 - [x] Upgrade to latest LTS version of `node` (12.16.2-stretch)
+- [x] Update dependencies to allow for reported exploits
 - [ ] Add code coverage
 - [ ] Create an integration with `swagger-ui` (for exploring the API)
