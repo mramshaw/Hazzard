@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mramshaw/Hazzard#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "morgan": "^1.9.1",
     "superagent": "^5.1.0"
   },
